@@ -5,12 +5,7 @@
 #ifndef DRAWCONTEXT_H_
 #define DRAWCONTEXT_H_
 
-#if defined( BOARD_HAS_PSRAM)
- #define COLOR_DEPTH 8
-#else
 #define COLOR_DEPTH 1
-#endif
-//#define COLOR_DEPTH 1
 #define ERACER_COLOR 0x0000
 
 #include "ColorPalette.h"

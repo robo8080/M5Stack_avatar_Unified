@@ -24,12 +24,13 @@ class Avatar {
   int offsetY;
   ColorPalette palette;
   const char *speechText;
+  LGFX_Device* device;
 
  public:
   Avatar();
   explicit Avatar(Face *face);
   Avatar(LGFX_Device* device);
-//  explicit Avatar(Face *face, LGFX_Device* device);
+  explicit Avatar(Face *face, LGFX_Device* device);
   ~Avatar() = default;
   Avatar(const Avatar &other) = default;
   Avatar &operator=(const Avatar &other) = default;

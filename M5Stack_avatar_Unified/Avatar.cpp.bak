@@ -72,23 +72,22 @@ Avatar::Avatar(Face *face)
       palette{ColorPalette()},
       speechText{""} {}
 
-//Avatar::Avatar(LGFX_Device* device) : Avatar(new Face(device), device) {}
-Avatar::Avatar(LGFX_Device* device) : Avatar(new Face(device)) {}
+Avatar::Avatar(LGFX_Device* device) : Avatar(new Face(device), device) {}
 
-//Avatar::Avatar(Face *face, LGFX_Device* device)
-//    : face{face},
-//      _isDrawing{true},
-//      expression{Expression::Neutral},
-//      breath{0},
-//      eyeOpenRatio{1},
-//      mouthOpenRatio{0},
-//      gazeV{0},
-//      gazeH{0},
-//      rotation{0},
-//      scale{1},
-//      palette{ColorPalette()},
-//      speechText{""},
-//      device(device) {}
+Avatar::Avatar(Face *face, LGFX_Device* device)
+    : face{face},
+      _isDrawing{true},
+      expression{Expression::Neutral},
+      breath{0},
+      eyeOpenRatio{1},
+      mouthOpenRatio{0},
+      gazeV{0},
+      gazeH{0},
+      rotation{0},
+      scale{1},
+      palette{ColorPalette()},
+      speechText{""},
+      device(device) {}
 
 void Avatar::setFace(Face *face) { this->face = face; }
 
